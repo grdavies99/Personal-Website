@@ -14,7 +14,7 @@ header{
     border-width: 85%;
     text-align: center;
     padding: .1em;
-    position: relative;
+    position: fixed;
 
 }
 
@@ -93,8 +93,8 @@ footer{
 }
 footer ul{
     list-style: none;
-    margin: 0 auto 0 0;
+    margin: .3em auto .3em 0;
 }
 footer h3{
-    margin: 0 0 0 auto;
+    margin: .3em 0 .3em auto;
 }

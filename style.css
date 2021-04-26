@@ -1,12 +1,14 @@
 *{
     font-family: sans-serif;
 }
+
+
 body{
     margin: 0;
     background-color: #fff;
 }
 header{
-    background-color: #FFF;
+    background-color: rgba(255, 255, 255, 1);
     width: 100%;
     margin:0 auto;
     color: #131313;
@@ -19,15 +21,17 @@ header{
 }
 
 a{
+    font-size: large;
     text-decoration: none;
     border-bottom: 1px solid transparent;
     margin-left: .3em;
     margin-right: .3em;
     color: #000;
-    transition: all ease-in .5s;
+    transition: all ease-out .25s;
 }
 a:hover{
     border-bottom: 1px solid black;
+    font-size: larger;
 }
 #frontPhoto{
     width: auto;
@@ -36,11 +40,12 @@ a:hover{
 }
 #frontText{
     color: #131313;
-    width: 50%;
-    height: 400px;
+    width: auto;
+    height: 40%;
     font-size: large;
-    margin: 5%;
+    margin: 3%;
     display: block;
+    /* border: 1px solid black; */
 }
 #buttonContainer{
     padding-left: 40%;
@@ -63,7 +68,7 @@ a:hover{
     height: 100%; 
 }
 #FrontPage{
-    background-image: url("./j8jihtzcadm41.png");
+    background-image: url("./porsche.png");
     margin-left: auto;
     margin-right: auto;
     height: calc(100%);
@@ -97,4 +102,52 @@ footer ul{
 }
 footer h3{
     margin: .3em 0 .3em auto;
+}
+#spacer{
+    float: right;
+}
+#title{
+    width: 100%;
+}
+th{
+    width: 100%;
+}
+i{
+    z-index: 0;
+}
+
+@media only screen and (max-width: 600px) {
+    #frontPhoto{
+        display: none;
+    }
+    #FrontPage{
+        width: 100%;
+    }
+    #frontText{
+        display: block;
+        height: auto;
+    }
+    img{
+        display: none;
+    }
+    #mainBody{
+        width:90%;
+        margin: 0 auto 0 auto;
+        display: block;
+    }
+    td#title{
+        width: 2em;
+    }
+    th{
+        text-align: left;
+    }
+
+}
+@media only screen and (max-width: 1200px) {
+    img{
+        display: none;
+    }
+    th h3{
+        height: 2em;
+    }
 }

@@ -5,20 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Garrett Davies</title>
-    <script src="t2S.js"></script>
+    <script src="drop.js"></script>
 </head>
 <body>
-    <header>
-        <h1 id = 'head'>Garrett Davies</h1>
+    <header id = 'head'>
+        <h1 >Garrett Davies</h1>
         <br>
         <nav style='display: inline-flex;margin-top: 0; padding-bottom: .3em;'><a href="about.html">About</a> | <a href="resume.html">Resume</a></nav>
         
     </header>
-    <div id="FrontPage">
+    <!-- <div id="FrontPage">
         <div id="centerBox">
            <h2>Hello, I'm Garrett</h2> 
         </div>
-    </div>
+    </div> -->
     <div id="mainBody">
         <div id='frontText'>
             <h1><b>About Me</b></h1>
@@ -26,20 +26,29 @@
             information systems with an emphasis in application development and 
             a minor in computer science.
             <br><br>
-            I am most interested in Mobile Development using Flutter and Dart,
-            however my current goal is to learn as much as i can about all aspects 
+            I am most interested in full-stack web development in PHP and JavaScript and, also
+             mobile development using Flutter and Dart,
+            however my current goal is to learn as much as I can about all aspects 
             of programming. 
             <br><br>
-            I make excellent pizza and, I have three plants named Topanga, Romulus, 
-            and Jensen jr. I also spent three years as a member of the track and field team at Western
+            I make excellent pizza and, I have three plants named Jensen Junior, Romulus, 
+            and Topanga. I also spent three years as a member of the track and field team at Western
             Washington University where I competed in the High Jump.
             <br><br>
-           <div id='buttonContainer'>
-                <button>Learn More</button>
+           <div id='buttonContainer' onclick="dropDown()">
+                <button>Message Me</button>
+            </div>
+            <div id="drop">
+                <form action="POST" >
+                    Name: <br><input type="text" name="Name"><br>
+                    Subject: <br><input type="text" name="Subject"><br>
+                    Message: <br><textarea name="msg" id="msg" cols="30" rows="10"></textarea><br>
+                    <input type="submit" name="submit">
+                </form>
             </div>
         </div>
         <div id='frontPhoto'>
-            <img id='frontPhoto' src="./pexels-alexas-fotos-2129654.jpg" alt="chicken photo">
+            <img id='frontPhoto' src="./DSC_0175.jpg" alt="chicken photo">
         </div>
     </div>
 </body>

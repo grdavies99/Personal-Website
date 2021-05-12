@@ -1,8 +1,6 @@
 *{
     font-family: sans-serif;
 }
-
-
 body{
     margin: 0;
     background-color: #fff;
@@ -19,7 +17,16 @@ header{
     position: fixed;
 
 }
-
+#head{
+    width: 100%;
+    margin:0 auto;
+    color: #131313;
+    /* border-bottom: 1px solid gray; */
+    border-width: 85%;
+    text-align: center;
+    padding: .1em;
+    position: static;
+}
 a{
     font-size: large;
     text-decoration: none;
@@ -65,10 +72,10 @@ a:hover{
     width: 80%;
     margin: 0 10%;
     background-color: #fff;
-    height: 100%; 
+    height: fit-content; 
 }
 #FrontPage{
-    background-image: url("./porsche.png");
+    background-image: url("./DSC_0179.jpg");
     margin-left: auto;
     margin-right: auto;
     height: calc(100%);
@@ -76,7 +83,7 @@ a:hover{
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size:contain;
     line-height: 100%;
     display: flex;
     align-items: center;
@@ -115,6 +122,29 @@ th{
 i{
     z-index: 0;
 }
+#drop{
+    display: none;
+    opacity: 0;
+    width: 60%;
+    margin: 0 auto 0 auto;
+}
+input{
+    margin: .5em;
+    width: 100%;
+}
+input[type=submit]{
+    width: fit-content;
+    margin: .5em auto .5em auto;
+    padding: .3em;
+}
+textarea{
+    resize: none;
+    margin: .5em;
+    width: 100%;
+    height: 100px;
+    font-size: large;
+}
+
 
 @media only screen and (max-width: 600px) {
     #frontPhoto{
@@ -122,6 +152,8 @@ i{
     }
     #FrontPage{
         width: 100%;
+        background-image: url('./DSC_0122.jpg');
+        background-size: cover;
     }
     #frontText{
         display: block;
@@ -141,7 +173,12 @@ i{
     th{
         text-align: left;
     }
-
+    #drop{
+        width: 100%;
+    }
+    input{
+        border: 1px solid grey;
+    }
 }
 @media only screen and (max-width: 1200px) {
     img{
